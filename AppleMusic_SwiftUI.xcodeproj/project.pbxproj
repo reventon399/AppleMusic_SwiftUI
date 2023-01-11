@@ -15,6 +15,7 @@
 		91E577E9296F0E7200CB4B2F /* LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E577E8296F0E7200CB4B2F /* LibraryView.swift */; };
 		91E577EB296F10BC00CB4B2F /* CurrentTrackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E577EA296F10BC00CB4B2F /* CurrentTrackView.swift */; };
 		91E577ED296F190100CB4B2F /* CheckListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E577EC296F190100CB4B2F /* CheckListView.swift */; };
+		91E577EF296F3B4900CB4B2F /* SettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E577EE296F3B4800CB4B2F /* SettingsModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		91E577E8296F0E7200CB4B2F /* LibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryView.swift; sourceTree = "<group>"; };
 		91E577EA296F10BC00CB4B2F /* CurrentTrackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentTrackView.swift; sourceTree = "<group>"; };
 		91E577EC296F190100CB4B2F /* CheckListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckListView.swift; sourceTree = "<group>"; };
+		91E577EE296F3B4800CB4B2F /* SettingsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 		91E577D3296C9A7300CB4B2F /* AppleMusic_SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				91E577F1296F43A700CB4B2F /* TabBar */,
 				91E577E2296EF41D00CB4B2F /* App */,
 				91E577E3296EF43D00CB4B2F /* View */,
 				91E577D8296C9AB200CB4B2F /* Assets.xcassets */,
@@ -86,6 +89,8 @@
 		91E577E3296EF43D00CB4B2F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				91E577D6296C9A7300CB4B2F /* ContentView.swift */,
+				91E577EA296F10BC00CB4B2F /* CurrentTrackView.swift */,
 				91E577E5296EF44A00CB4B2F /* Models */,
 				91E577E4296EF44500CB4B2F /* Modules */,
 			);
@@ -95,6 +100,7 @@
 		91E577E4296EF44500CB4B2F /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				91E577F0296F436C00CB4B2F /* Library */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -102,13 +108,26 @@
 		91E577E5296EF44A00CB4B2F /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				91E577D6296C9A7300CB4B2F /* ContentView.swift */,
-				91E577E6296F09D800CB4B2F /* TabBar.swift */,
-				91E577E8296F0E7200CB4B2F /* LibraryView.swift */,
-				91E577EA296F10BC00CB4B2F /* CurrentTrackView.swift */,
-				91E577EC296F190100CB4B2F /* CheckListView.swift */,
+				91E577EE296F3B4800CB4B2F /* SettingsModel.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		91E577F0296F436C00CB4B2F /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				91E577EC296F190100CB4B2F /* CheckListView.swift */,
+				91E577E8296F0E7200CB4B2F /* LibraryView.swift */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		91E577F1296F43A700CB4B2F /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				91E577E6296F09D800CB4B2F /* TabBar.swift */,
+			);
+			path = TabBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -186,6 +205,7 @@
 				91E577D7296C9A7300CB4B2F /* ContentView.swift in Sources */,
 				91E577E7296F09D900CB4B2F /* TabBar.swift in Sources */,
 				91E577D5296C9A7300CB4B2F /* AppleMusic_SwiftUIApp.swift in Sources */,
+				91E577EF296F3B4900CB4B2F /* SettingsModel.swift in Sources */,
 				91E577ED296F190100CB4B2F /* CheckListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
