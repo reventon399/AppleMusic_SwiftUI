@@ -12,20 +12,21 @@ struct CheckListView: View {
     @State var settingsItems = Settings.settingsItems
     @State var isEditMode = EditMode.active
     @State var selectionItems: [String] = []
+    @State var itemSelected = Set<UUID>()
     
     var body: some View {
-        List {
-            ForEach(settingsItems, id: \.self) { names in
-                HStack() {
-                    Image(systemName: names.image)
-                        .foregroundColor(.red)
-                    Text(names.name)
-                        .padding(.leading, 5)
-                }
-                if self.selectionItems.contains(names.title) {
-                    self.selectionItems.removeAll(where: { names.title == $0 })
-                } else {
-                    self.selectionItems.append(names.title)
+        List(selection: $itemSelected) {
+            ForEach(settingsItems) { item in
+                CheckListitemView(
+                    image: item.image,
+                    title: item.name,
+                    isSelected: selectionItems.contains(item.name)
+                ) {
+                    if self.selectionItems.contains(item.name) {
+                        self.selectionItems.removeAll(where: { item.name == $0 })
+                    } else {
+                        self.selectionItems.append(item.name)
+                    }
                 }
             }
             .onMove(perform: moveItem)
