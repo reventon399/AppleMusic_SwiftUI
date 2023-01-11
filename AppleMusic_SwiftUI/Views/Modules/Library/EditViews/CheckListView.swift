@@ -17,9 +17,10 @@ struct CheckListView: View {
     var body: some View {
         List(selection: $itemSelected) {
             ForEach(settingsItems) { item in
-                CheckListitemView(image: item.image,
-                                  title: item.name,
-                                  isSelected: selectionItems.contains(item.name)
+                CheckListitemView(
+                    image: item.image,
+                    title: item.name,
+                    isSelected: selectionItems.contains(item.name)
                 ) {
                     if self.selectionItems.contains(item.name) {
                         self.selectionItems.removeAll(where: { item.name == $0 })
