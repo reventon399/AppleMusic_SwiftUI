@@ -16,6 +16,7 @@
 		91E577EB296F10BC00CB4B2F /* CurrentTrackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E577EA296F10BC00CB4B2F /* CurrentTrackView.swift */; };
 		91E577ED296F190100CB4B2F /* CheckListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E577EC296F190100CB4B2F /* CheckListView.swift */; };
 		91E577EF296F3B4900CB4B2F /* SettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E577EE296F3B4800CB4B2F /* SettingsModel.swift */; };
+		91E577F3296F4BC900CB4B2F /* CheckListitemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E577F2296F4BC900CB4B2F /* CheckListitemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		91E577EA296F10BC00CB4B2F /* CurrentTrackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentTrackView.swift; sourceTree = "<group>"; };
 		91E577EC296F190100CB4B2F /* CheckListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckListView.swift; sourceTree = "<group>"; };
 		91E577EE296F3B4800CB4B2F /* SettingsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsModel.swift; sourceTree = "<group>"; };
+		91E577F2296F4BC900CB4B2F /* CheckListitemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckListitemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 			children = (
 				91E577EC296F190100CB4B2F /* CheckListView.swift */,
 				91E577E8296F0E7200CB4B2F /* LibraryView.swift */,
+				91E577F2296F4BC900CB4B2F /* CheckListitemView.swift */,
 			);
 			path = Library;
 			sourceTree = "<group>";
@@ -206,6 +209,7 @@
 				91E577E7296F09D900CB4B2F /* TabBar.swift in Sources */,
 				91E577D5296C9A7300CB4B2F /* AppleMusic_SwiftUIApp.swift in Sources */,
 				91E577EF296F3B4900CB4B2F /* SettingsModel.swift in Sources */,
+				91E577F3296F4BC900CB4B2F /* CheckListitemView.swift in Sources */,
 				91E577ED296F190100CB4B2F /* CheckListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
