@@ -65,9 +65,9 @@
 		91E577D3296C9A7300CB4B2F /* AppleMusic_SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				91E577F1296F43A700CB4B2F /* TabBar */,
 				91E577E2296EF41D00CB4B2F /* App */,
-				91E577E3296EF43D00CB4B2F /* View */,
+				91E577F1296F43A700CB4B2F /* TabBar */,
+				91E577E3296EF43D00CB4B2F /* Views */,
 				91E577D8296C9AB200CB4B2F /* Assets.xcassets */,
 				91E577DA296C9AB300CB4B2F /* Preview Content */,
 			);
@@ -90,7 +90,7 @@
 			path = App;
 			sourceTree = "<group>";
 		};
-		91E577E3296EF43D00CB4B2F /* View */ = {
+		91E577E3296EF43D00CB4B2F /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				91E577D6296C9A7300CB4B2F /* ContentView.swift */,
@@ -98,13 +98,15 @@
 				91E577E5296EF44A00CB4B2F /* Models */,
 				91E577E4296EF44500CB4B2F /* Modules */,
 			);
-			path = View;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		91E577E4296EF44500CB4B2F /* Modules */ = {
 			isa = PBXGroup;
 			children = (
 				91E577F0296F436C00CB4B2F /* Library */,
+				91E577F6296F513200CB4B2F /* Radio */,
+				91E577F7296F513700CB4B2F /* Search */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -120,10 +122,8 @@
 		91E577F0296F436C00CB4B2F /* Library */ = {
 			isa = PBXGroup;
 			children = (
-				91E577F2296F4BC900CB4B2F /* CheckListitemView.swift */,
-				91E577EC296F190100CB4B2F /* CheckListView.swift */,
-				91E577E8296F0E7200CB4B2F /* LibraryView.swift */,
-				91E577F4296F502500CB4B2F /* LibraryViewLabel.swift */,
+				91E577F8296F516700CB4B2F /* LibraryViews */,
+				91E577F9296F517E00CB4B2F /* EditViews */,
 			);
 			path = Library;
 			sourceTree = "<group>";
@@ -134,6 +134,38 @@
 				91E577E6296F09D800CB4B2F /* TabBar.swift */,
 			);
 			path = TabBar;
+			sourceTree = "<group>";
+		};
+		91E577F6296F513200CB4B2F /* Radio */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Radio;
+			sourceTree = "<group>";
+		};
+		91E577F7296F513700CB4B2F /* Search */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		91E577F8296F516700CB4B2F /* LibraryViews */ = {
+			isa = PBXGroup;
+			children = (
+				91E577E8296F0E7200CB4B2F /* LibraryView.swift */,
+				91E577F4296F502500CB4B2F /* LibraryViewLabel.swift */,
+			);
+			path = LibraryViews;
+			sourceTree = "<group>";
+		};
+		91E577F9296F517E00CB4B2F /* EditViews */ = {
+			isa = PBXGroup;
+			children = (
+				91E577F2296F4BC900CB4B2F /* CheckListitemView.swift */,
+				91E577EC296F190100CB4B2F /* CheckListView.swift */,
+			);
+			path = EditViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

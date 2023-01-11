@@ -24,7 +24,7 @@ struct CheckListitemView: View {
                 Text(self.title)
                     .padding(.leading, 5)
             }
-            .frame(height: 40)
+            .frame(height: 30)
         }
     }
 }
