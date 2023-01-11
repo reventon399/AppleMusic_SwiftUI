@@ -7,7 +7,8 @@
 
 import Foundation
 
-struct Settings: Hashable {
+struct Settings: Hashable, Identifiable {
+    var id = UUID()
     var image: String
     var name: String
 }

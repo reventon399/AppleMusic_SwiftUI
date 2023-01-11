@@ -17,6 +17,7 @@
 		91E577ED296F190100CB4B2F /* CheckListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E577EC296F190100CB4B2F /* CheckListView.swift */; };
 		91E577EF296F3B4900CB4B2F /* SettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E577EE296F3B4800CB4B2F /* SettingsModel.swift */; };
 		91E577F3296F4BC900CB4B2F /* CheckListitemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E577F2296F4BC900CB4B2F /* CheckListitemView.swift */; };
+		91E577F5296F502600CB4B2F /* LibraryViewLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E577F4296F502500CB4B2F /* LibraryViewLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		91E577EC296F190100CB4B2F /* CheckListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckListView.swift; sourceTree = "<group>"; };
 		91E577EE296F3B4800CB4B2F /* SettingsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsModel.swift; sourceTree = "<group>"; };
 		91E577F2296F4BC900CB4B2F /* CheckListitemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckListitemView.swift; sourceTree = "<group>"; };
+		91E577F4296F502500CB4B2F /* LibraryViewLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryViewLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,9 +120,10 @@
 		91E577F0296F436C00CB4B2F /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				91E577F2296F4BC900CB4B2F /* CheckListitemView.swift */,
 				91E577EC296F190100CB4B2F /* CheckListView.swift */,
 				91E577E8296F0E7200CB4B2F /* LibraryView.swift */,
-				91E577F2296F4BC900CB4B2F /* CheckListitemView.swift */,
+				91E577F4296F502500CB4B2F /* LibraryViewLabel.swift */,
 			);
 			path = Library;
 			sourceTree = "<group>";
@@ -203,6 +206,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91E577F5296F502600CB4B2F /* LibraryViewLabel.swift in Sources */,
 				91E577EB296F10BC00CB4B2F /* CurrentTrackView.swift in Sources */,
 				91E577E9296F0E7200CB4B2F /* LibraryView.swift in Sources */,
 				91E577D7296C9A7300CB4B2F /* ContentView.swift in Sources */,

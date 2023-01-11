@@ -8,13 +8,24 @@
 import SwiftUI
 
 struct CheckListitemView: View {
+    
+    var image: String
+    var title: String
+    var isSelected: Bool
+    var itemAction: () -> ()
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Button(action: self.itemAction) {
+            HStack {
+                Image(systemName: self.image)
+                    .resizable()
+                    .foregroundColor(.red)
+                    .frame(width: 18, height: 18)
+                Text(self.title)
+                    .padding(.leading, 5)
+            }
+            .frame(height: 40)
+        }
     }
 }
 
-struct CheckListitemView_Previews: PreviewProvider {
-    static var previews: some View {
-        CheckListitemView()
-    }
-}
