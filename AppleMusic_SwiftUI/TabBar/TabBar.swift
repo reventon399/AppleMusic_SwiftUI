@@ -32,6 +32,9 @@ struct TabBar: View {
                 
             }
             .accentColor(.red)
+            BlurView()
+                .frame(height: 80)
+                .offset(y: -48)
             CurrentTrackView()
         } )
     }

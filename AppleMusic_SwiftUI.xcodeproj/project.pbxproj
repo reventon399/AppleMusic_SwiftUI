@@ -14,6 +14,7 @@
 		911199222971DF8400F3C329 /* RecentlyPlayedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911199212971DF8400F3C329 /* RecentlyPlayedModel.swift */; };
 		911199282971E33C00F3C329 /* HostedByArtistsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911199272971E33C00F3C329 /* HostedByArtistsModel.swift */; };
 		9111992A2971E40F00F3C329 /* HostedByArtistsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911199292971E40F00F3C329 /* HostedByArtistsView.swift */; };
+		9111992D2971EF8900F3C329 /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9111992C2971EF8900F3C329 /* BlurView.swift */; };
 		91E577D5296C9A7300CB4B2F /* AppleMusic_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E577D4296C9A7300CB4B2F /* AppleMusic_SwiftUIApp.swift */; };
 		91E577D7296C9A7300CB4B2F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E577D6296C9A7300CB4B2F /* ContentView.swift */; };
 		91E577D9296C9AB200CB4B2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91E577D8296C9AB200CB4B2F /* Assets.xcassets */; };
@@ -35,6 +36,7 @@
 		911199212971DF8400F3C329 /* RecentlyPlayedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentlyPlayedModel.swift; sourceTree = "<group>"; };
 		911199272971E33C00F3C329 /* HostedByArtistsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostedByArtistsModel.swift; sourceTree = "<group>"; };
 		911199292971E40F00F3C329 /* HostedByArtistsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostedByArtistsView.swift; sourceTree = "<group>"; };
+		9111992C2971EF8900F3C329 /* BlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
 		91E577D1296C9A7300CB4B2F /* AppleMusic_SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleMusic_SwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91E577D4296C9A7300CB4B2F /* AppleMusic_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleMusic_SwiftUIApp.swift; sourceTree = "<group>"; };
 		91E577D6296C9A7300CB4B2F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -183,6 +185,7 @@
 			isa = PBXGroup;
 			children = (
 				91E577D6296C9A7300CB4B2F /* ContentView.swift */,
+				9111992C2971EF8900F3C329 /* BlurView.swift */,
 				91E577EA296F10BC00CB4B2F /* CurrentTrackView.swift */,
 				91E577E4296EF44500CB4B2F /* Modules */,
 			);
@@ -336,6 +339,7 @@
 				911199172971C5AC00F3C329 /* FeaturedStationView.swift in Sources */,
 				9111992A2971E40F00F3C329 /* HostedByArtistsView.swift in Sources */,
 				911199222971DF8400F3C329 /* RecentlyPlayedModel.swift in Sources */,
+				9111992D2971EF8900F3C329 /* BlurView.swift in Sources */,
 				91E577F3296F4BC900CB4B2F /* CheckListitemView.swift in Sources */,
 				9111991F2971DF1500F3C329 /* FeaturedStationsModel.swift in Sources */,
 				91E577ED296F190100CB4B2F /* CheckListView.swift in Sources */,
