@@ -8,15 +8,16 @@
 import SwiftUI
 
 struct RadioView: View {
-    
-    
-    
+ 
     var body: some View {
         NavigationView {
-        RadioViewLayout()
-                .navigationBarTitle("Радио")
+            ScrollView(.vertical, showsIndicators: false) {
+                FeaturedStationView()
+                HostedByArtistsView()
+                RecentlyPlayedView()
+                    .navigationBarTitle("Радио")
+            }
         }
-        
     }
 }
 

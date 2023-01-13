@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		911199132971BBCD00F3C329 /* RadioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911199122971BBCC00F3C329 /* RadioView.swift */; };
 		911199172971C5AC00F3C329 /* FeaturedStationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911199162971C5AC00F3C329 /* FeaturedStationView.swift */; };
+		9111991B2971DEB600F3C329 /* RecentlyPlayedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9111991A2971DEB600F3C329 /* RecentlyPlayedView.swift */; };
+		9111991F2971DF1500F3C329 /* FeaturedStationsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9111991E2971DF1500F3C329 /* FeaturedStationsModel.swift */; };
+		911199222971DF8400F3C329 /* RecentlyPlayedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911199212971DF8400F3C329 /* RecentlyPlayedModel.swift */; };
+		911199282971E33C00F3C329 /* HostedByArtistsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911199272971E33C00F3C329 /* HostedByArtistsModel.swift */; };
+		9111992A2971E40F00F3C329 /* HostedByArtistsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911199292971E40F00F3C329 /* HostedByArtistsView.swift */; };
 		91E577D5296C9A7300CB4B2F /* AppleMusic_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E577D4296C9A7300CB4B2F /* AppleMusic_SwiftUIApp.swift */; };
 		91E577D7296C9A7300CB4B2F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E577D6296C9A7300CB4B2F /* ContentView.swift */; };
 		91E577D9296C9AB200CB4B2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91E577D8296C9AB200CB4B2F /* Assets.xcassets */; };
@@ -25,6 +30,11 @@
 /* Begin PBXFileReference section */
 		911199122971BBCC00F3C329 /* RadioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioView.swift; sourceTree = "<group>"; };
 		911199162971C5AC00F3C329 /* FeaturedStationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedStationView.swift; sourceTree = "<group>"; };
+		9111991A2971DEB600F3C329 /* RecentlyPlayedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentlyPlayedView.swift; sourceTree = "<group>"; };
+		9111991E2971DF1500F3C329 /* FeaturedStationsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedStationsModel.swift; sourceTree = "<group>"; };
+		911199212971DF8400F3C329 /* RecentlyPlayedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentlyPlayedModel.swift; sourceTree = "<group>"; };
+		911199272971E33C00F3C329 /* HostedByArtistsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostedByArtistsModel.swift; sourceTree = "<group>"; };
+		911199292971E40F00F3C329 /* HostedByArtistsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostedByArtistsView.swift; sourceTree = "<group>"; };
 		91E577D1296C9A7300CB4B2F /* AppleMusic_SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleMusic_SwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91E577D4296C9A7300CB4B2F /* AppleMusic_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleMusic_SwiftUIApp.swift; sourceTree = "<group>"; };
 		91E577D6296C9A7300CB4B2F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,9 +63,76 @@
 		911199182971D93400F3C329 /* FeaturedStations */ = {
 			isa = PBXGroup;
 			children = (
-				911199162971C5AC00F3C329 /* FeaturedStationView.swift */,
+				9111992B2971E43700F3C329 /* View */,
+				9111991D2971DEFD00F3C329 /* Model */,
 			);
 			path = FeaturedStations;
+			sourceTree = "<group>";
+		};
+		911199192971DEA100F3C329 /* RecentlyPlayed */ = {
+			isa = PBXGroup;
+			children = (
+				911199202971DF7500F3C329 /* Model */,
+				9111991A2971DEB600F3C329 /* RecentlyPlayedView.swift */,
+			);
+			path = RecentlyPlayed;
+			sourceTree = "<group>";
+		};
+		9111991C2971DEDA00F3C329 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				91E577EE296F3B4800CB4B2F /* SettingsModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9111991D2971DEFD00F3C329 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9111991E2971DF1500F3C329 /* FeaturedStationsModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		911199202971DF7500F3C329 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				911199212971DF8400F3C329 /* RecentlyPlayedModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		911199232971E30E00F3C329 /* HostedByArtists */ = {
+			isa = PBXGroup;
+			children = (
+				911199252971E32700F3C329 /* View */,
+				911199242971E31800F3C329 /* Model */,
+			);
+			path = HostedByArtists;
+			sourceTree = "<group>";
+		};
+		911199242971E31800F3C329 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				911199272971E33C00F3C329 /* HostedByArtistsModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		911199252971E32700F3C329 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				911199292971E40F00F3C329 /* HostedByArtistsView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9111992B2971E43700F3C329 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				911199162971C5AC00F3C329 /* FeaturedStationView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		91E577C8296C9A7200CB4B2F = {
@@ -107,7 +184,6 @@
 			children = (
 				91E577D6296C9A7300CB4B2F /* ContentView.swift */,
 				91E577EA296F10BC00CB4B2F /* CurrentTrackView.swift */,
-				91E577E5296EF44A00CB4B2F /* Models */,
 				91E577E4296EF44500CB4B2F /* Modules */,
 			);
 			path = Views;
@@ -123,17 +199,10 @@
 			path = Modules;
 			sourceTree = "<group>";
 		};
-		91E577E5296EF44A00CB4B2F /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				91E577EE296F3B4800CB4B2F /* SettingsModel.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
 		91E577F0296F436C00CB4B2F /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				9111991C2971DEDA00F3C329 /* Model */,
 				91E577F8296F516700CB4B2F /* LibraryViews */,
 				91E577F9296F517E00CB4B2F /* EditViews */,
 			);
@@ -152,7 +221,9 @@
 			isa = PBXGroup;
 			children = (
 				911199122971BBCC00F3C329 /* RadioView.swift */,
+				911199232971E30E00F3C329 /* HostedByArtists */,
 				911199182971D93400F3C329 /* FeaturedStations */,
+				911199192971DEA100F3C329 /* RecentlyPlayed */,
 			);
 			path = Radio;
 			sourceTree = "<group>";
@@ -255,13 +326,18 @@
 				91E577F5296F502600CB4B2F /* LibraryViewLabel.swift in Sources */,
 				91E577EB296F10BC00CB4B2F /* CurrentTrackView.swift in Sources */,
 				91E577E9296F0E7200CB4B2F /* LibraryView.swift in Sources */,
+				9111991B2971DEB600F3C329 /* RecentlyPlayedView.swift in Sources */,
 				91E577D7296C9A7300CB4B2F /* ContentView.swift in Sources */,
 				911199132971BBCD00F3C329 /* RadioView.swift in Sources */,
+				911199282971E33C00F3C329 /* HostedByArtistsModel.swift in Sources */,
 				91E577E7296F09D900CB4B2F /* TabBar.swift in Sources */,
 				91E577D5296C9A7300CB4B2F /* AppleMusic_SwiftUIApp.swift in Sources */,
 				91E577EF296F3B4900CB4B2F /* SettingsModel.swift in Sources */,
 				911199172971C5AC00F3C329 /* FeaturedStationView.swift in Sources */,
+				9111992A2971E40F00F3C329 /* HostedByArtistsView.swift in Sources */,
+				911199222971DF8400F3C329 /* RecentlyPlayedModel.swift in Sources */,
 				91E577F3296F4BC900CB4B2F /* CheckListitemView.swift in Sources */,
+				9111991F2971DF1500F3C329 /* FeaturedStationsModel.swift in Sources */,
 				91E577ED296F190100CB4B2F /* CheckListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

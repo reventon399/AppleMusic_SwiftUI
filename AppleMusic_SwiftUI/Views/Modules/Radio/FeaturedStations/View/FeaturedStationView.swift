@@ -13,9 +13,11 @@ struct FeaturedStationView: View {
         GridItem(.fixed(300))
     ]
     
-    let genresArray = GenresCollection.genresItems
+    @State var genresArray = FeaturedStationsModel.genresItems
     
     var body: some View {
+        
+        
         ScrollView(.horizontal, showsIndicators: false) {
             LazyHGrid(rows: rows) {
                 ForEach(genresArray, id:\.self) { item in
@@ -23,16 +25,12 @@ struct FeaturedStationView: View {
                         Text(item.featuredStation)
                             .font(.caption)
                             .foregroundColor(Color.gray)
-                            
-                        
                         Text(item.stationName)
                             .font(.title2)
                             .foregroundColor(Color.white)
-                            
                         Text(item.appleMusicGenre)
                             .font(.title2)
                             .foregroundColor(Color.gray)
-                            
                         Image(item.genreImage)
                             .resizable()
                             .foregroundColor(.blue)
@@ -40,8 +38,12 @@ struct FeaturedStationView: View {
                     }
                 }
             }
+            .frame(height: 300)
+            .padding(.horizontal, 16)
+            .padding(.bottom, 16)
         }
     }
+
 }
 
 struct RadioStationView_Previews: PreviewProvider {
