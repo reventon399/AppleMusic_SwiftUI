@@ -17,7 +17,7 @@ struct CurrentTrackView: View {
                     .frame(width: 55, height: 55)
                     .aspectRatio(contentMode: .fill)
                 
-                Text("LIL KRYSTALLL - Логан")
+                Text("Логан")
                     .font(.callout)
                     .bold()
                 
@@ -46,5 +46,6 @@ struct CurrentTrackView: View {
 struct CurrentTrackView_Previews: PreviewProvider {
     static var previews: some View {
         CurrentTrackView()
+            .preferredColorScheme(.dark)
     }
 }

@@ -20,8 +20,9 @@ struct CheckListitemView: View {
                 Image(systemName: self.image)
                     .resizable()
                     .foregroundColor(.red)
-                    .frame(width: 18, height: 18)
+                    .frame(width: 23, height: 23)
                 Text(self.title)
+                    .font(.system(size: 24))
                     .padding(.leading, 5)
             }
             .frame(height: 30)

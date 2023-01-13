@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		911199132971BBCD00F3C329 /* RadioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911199122971BBCC00F3C329 /* RadioView.swift */; };
+		911199172971C5AC00F3C329 /* FeaturedStationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911199162971C5AC00F3C329 /* FeaturedStationView.swift */; };
 		91E577D5296C9A7300CB4B2F /* AppleMusic_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E577D4296C9A7300CB4B2F /* AppleMusic_SwiftUIApp.swift */; };
 		91E577D7296C9A7300CB4B2F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E577D6296C9A7300CB4B2F /* ContentView.swift */; };
 		91E577D9296C9AB200CB4B2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91E577D8296C9AB200CB4B2F /* Assets.xcassets */; };
@@ -21,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		911199122971BBCC00F3C329 /* RadioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioView.swift; sourceTree = "<group>"; };
+		911199162971C5AC00F3C329 /* FeaturedStationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedStationView.swift; sourceTree = "<group>"; };
 		91E577D1296C9A7300CB4B2F /* AppleMusic_SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleMusic_SwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91E577D4296C9A7300CB4B2F /* AppleMusic_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleMusic_SwiftUIApp.swift; sourceTree = "<group>"; };
 		91E577D6296C9A7300CB4B2F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -46,6 +50,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		911199182971D93400F3C329 /* FeaturedStations */ = {
+			isa = PBXGroup;
+			children = (
+				911199162971C5AC00F3C329 /* FeaturedStationView.swift */,
+			);
+			path = FeaturedStations;
+			sourceTree = "<group>";
+		};
 		91E577C8296C9A7200CB4B2F = {
 			isa = PBXGroup;
 			children = (
@@ -139,6 +151,8 @@
 		91E577F6296F513200CB4B2F /* Radio */ = {
 			isa = PBXGroup;
 			children = (
+				911199122971BBCC00F3C329 /* RadioView.swift */,
+				911199182971D93400F3C329 /* FeaturedStations */,
 			);
 			path = Radio;
 			sourceTree = "<group>";
@@ -242,9 +256,11 @@
 				91E577EB296F10BC00CB4B2F /* CurrentTrackView.swift in Sources */,
 				91E577E9296F0E7200CB4B2F /* LibraryView.swift in Sources */,
 				91E577D7296C9A7300CB4B2F /* ContentView.swift in Sources */,
+				911199132971BBCD00F3C329 /* RadioView.swift in Sources */,
 				91E577E7296F09D900CB4B2F /* TabBar.swift in Sources */,
 				91E577D5296C9A7300CB4B2F /* AppleMusic_SwiftUIApp.swift in Sources */,
 				91E577EF296F3B4900CB4B2F /* SettingsModel.swift in Sources */,
+				911199172971C5AC00F3C329 /* FeaturedStationView.swift in Sources */,
 				91E577F3296F4BC900CB4B2F /* CheckListitemView.swift in Sources */,
 				91E577ED296F190100CB4B2F /* CheckListView.swift in Sources */,
 			);
@@ -303,7 +319,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -357,7 +373,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

@@ -13,7 +13,7 @@ struct LibraryViewLabel: View {
             Text("Ищете свою музыку?")
                 .multilineTextAlignment(.center)
                 .bold()
-                .font(.system(size: 31))
+                .font(.system(size: 29))
             Text("Здесь появится купленная вами в Itunes Store музыка")
                 .foregroundColor(Color.gray)
                 .multilineTextAlignment(.center)
@@ -26,5 +26,6 @@ struct LibraryViewLabel: View {
 struct LibraryViewLabel_Previews: PreviewProvider {
     static var previews: some View {
         LibraryViewLabel()
+            .preferredColorScheme(.dark)
     }
 }

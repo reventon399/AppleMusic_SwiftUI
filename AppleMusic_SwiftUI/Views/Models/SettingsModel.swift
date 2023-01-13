@@ -29,3 +29,22 @@ extension Settings {
     ]
 }
 
+struct GenresCollection: Hashable, Identifiable {
+    var id = UUID()
+    
+    var featuredStation: String
+    var stationName: String
+    var appleMusicGenre: String
+    var genreImage: String
+}
+
+extension GenresCollection {
+    static var genresItems = [
+        GenresCollection(featuredStation: "FEATURED STATION", stationName: "Soft Pop Station", appleMusicGenre: "Apple Music Pop", genreImage: "lightPop"),
+        GenresCollection(featuredStation: "FEATURED STATION", stationName: "Hits Station", appleMusicGenre: "Apple Music Hits", genreImage: "hits"),
+        GenresCollection(featuredStation: "FEATURED STATION", stationName: "Hip-Hop Station", appleMusicGenre: "Apple Music Hip-Hop", genreImage: "hiphop"),
+        GenresCollection(featuredStation: "FEATURED STATION", stationName: "Pop Station", appleMusicGenre: "Apple Music Pop", genreImage: "pop"),
+        GenresCollection(featuredStation: "FEATURED STATION", stationName: "Classic Rock Station", appleMusicGenre: "Apple Music Classic Rock", genreImage: "rock"),
+        GenresCollection(featuredStation: "FEATURED STATION", stationName: "Smooth Jazz Station", appleMusicGenre: "Apple Music Jazz", genreImage: "jazz")
+    ]
+}

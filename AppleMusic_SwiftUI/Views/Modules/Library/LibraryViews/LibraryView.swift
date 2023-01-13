@@ -19,9 +19,12 @@ struct LibraryView: View {
                         editingViewIsHidden.toggle()
                     }, label: {
                         Text("Править")
+                            .font(.title3)
+
                             .foregroundColor(.red)
                     }))
                     .navigationBarTitle("Медиатека")
+                    
                 
             } else {
                 CheckListView()
@@ -29,6 +32,7 @@ struct LibraryView: View {
                         editingViewIsHidden.toggle()
                     }, label: {
                         Text("Готово")
+                            .font(.title3)
                             .foregroundColor(.red)
                     }))
                     .navigationBarTitle("Медиатека")
@@ -40,5 +44,6 @@ struct LibraryView: View {
 struct LibraryView_Previews: PreviewProvider {
     static var previews: some View {
         LibraryView()
+            .preferredColorScheme(.dark)
     }
 }

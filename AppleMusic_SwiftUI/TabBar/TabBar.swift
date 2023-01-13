@@ -18,7 +18,7 @@ struct TabBar: View {
                         Text("Медиатека")
                     }
                 
-                Text("RADIO")
+                RadioView()
                     .tabItem {
                         Image(systemName: "dot.radiowaves.left.and.right")
                         Text("Радио")
@@ -41,5 +41,6 @@ struct TabBar: View {
 struct TabView_Previews: PreviewProvider {
     static var previews: some View {
         TabBar()
+            .preferredColorScheme(.dark)
     }
 }
