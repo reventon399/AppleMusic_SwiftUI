@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct SearchBarView: View {
+    
     @Binding var searchText: String
     @Binding var isSearchActive: Bool
     

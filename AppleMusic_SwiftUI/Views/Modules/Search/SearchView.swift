@@ -17,6 +17,7 @@ struct SearchView: View {
             VStack {
                 
                 SearchBarView(searchText: $searchText, isSearchActive: $isSearchingActive)
+                CategoriesView()
             }
             .navigationTitle("Search")
         }

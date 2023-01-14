@@ -170,6 +170,13 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		91C8061C297367E0002E919D /* DetailCategoriesView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DetailCategoriesView;
+			sourceTree = "<group>";
+		};
 		91E577C8296C9A7200CB4B2F = {
 			isa = PBXGroup;
 			children = (
@@ -270,6 +277,7 @@
 				91C8060F297343F1002E919D /* SearchView.swift */,
 				91C8061129734521002E919D /* SearchBarView.swift */,
 				91C8061329734CB4002E919D /* CategoriesView */,
+				91C8061C297367E0002E919D /* DetailCategoriesView */,
 			);
 			path = Search;
 			sourceTree = "<group>";
