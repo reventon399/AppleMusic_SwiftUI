@@ -42,6 +42,7 @@ struct RecentlyPlayedView: View {
                     }
                 }
             }
+            .frame(height: 200)
             .padding(.horizontal, 16)
             .padding(.bottom, 16)
         }
