@@ -18,10 +18,11 @@ struct SearchBarView: View {
                     .font(.system(size: 18))
                     .foregroundColor(Color(.systemGray3))
                     .padding(.leading, 12)
-                TextField("Search playlists and tracks", text: $searchText)
+                TextField("Artists, Songs, Lyrics, and More", text: $searchText)
                     .onTapGesture {
                         isSearchActive = true
                     }
+                
                 if isSearchActive {
                     Button(action: {
                         searchText = ""

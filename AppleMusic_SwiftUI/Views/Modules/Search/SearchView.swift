@@ -13,7 +13,13 @@ struct SearchView: View {
     @State private var isSearchingActive = false
     
     var body: some View {
-        SearchBarView(searchText: $searchText, isSearchActive: $isSearchingActive)
+        NavigationView {
+            VStack {
+                
+                SearchBarView(searchText: $searchText, isSearchActive: $isSearchingActive)
+            }
+            .navigationTitle("Search")
+        }
     }
 }
 

@@ -17,6 +17,8 @@
 		9111992D2971EF8900F3C329 /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9111992C2971EF8900F3C329 /* BlurView.swift */; };
 		91C80610297343F1002E919D /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C8060F297343F1002E919D /* SearchView.swift */; };
 		91C8061229734521002E919D /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C8061129734521002E919D /* SearchBarView.swift */; };
+		91C8061629736004002E919D /* CategoriesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C8061529736004002E919D /* CategoriesModel.swift */; };
+		91C8061929736026002E919D /* CategoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C8061829736026002E919D /* CategoriesView.swift */; };
 		91E577D5296C9A7300CB4B2F /* AppleMusic_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E577D4296C9A7300CB4B2F /* AppleMusic_SwiftUIApp.swift */; };
 		91E577D7296C9A7300CB4B2F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E577D6296C9A7300CB4B2F /* ContentView.swift */; };
 		91E577D9296C9AB200CB4B2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91E577D8296C9AB200CB4B2F /* Assets.xcassets */; };
@@ -41,6 +43,8 @@
 		9111992C2971EF8900F3C329 /* BlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
 		91C8060F297343F1002E919D /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		91C8061129734521002E919D /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
+		91C8061529736004002E919D /* CategoriesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesModel.swift; sourceTree = "<group>"; };
+		91C8061829736026002E919D /* CategoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesView.swift; sourceTree = "<group>"; };
 		91E577D1296C9A7300CB4B2F /* AppleMusic_SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleMusic_SwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91E577D4296C9A7300CB4B2F /* AppleMusic_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleMusic_SwiftUIApp.swift; sourceTree = "<group>"; };
 		91E577D6296C9A7300CB4B2F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -137,6 +141,31 @@
 			isa = PBXGroup;
 			children = (
 				911199162971C5AC00F3C329 /* FeaturedStationView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		91C8061329734CB4002E919D /* CategoriesView */ = {
+			isa = PBXGroup;
+			children = (
+				91C806172973601B002E919D /* View */,
+				91C8061429734CC3002E919D /* Model */,
+			);
+			path = CategoriesView;
+			sourceTree = "<group>";
+		};
+		91C8061429734CC3002E919D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				91C8061529736004002E919D /* CategoriesModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		91C806172973601B002E919D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				91C8061829736026002E919D /* CategoriesView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -240,6 +269,7 @@
 			children = (
 				91C8060F297343F1002E919D /* SearchView.swift */,
 				91C8061129734521002E919D /* SearchBarView.swift */,
+				91C8061329734CB4002E919D /* CategoriesView */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -340,6 +370,7 @@
 				911199132971BBCD00F3C329 /* RadioView.swift in Sources */,
 				911199282971E33C00F3C329 /* HostedByArtistsModel.swift in Sources */,
 				91E577E7296F09D900CB4B2F /* TabBar.swift in Sources */,
+				91C8061929736026002E919D /* CategoriesView.swift in Sources */,
 				91E577D5296C9A7300CB4B2F /* AppleMusic_SwiftUIApp.swift in Sources */,
 				91E577EF296F3B4900CB4B2F /* SettingsModel.swift in Sources */,
 				91C80610297343F1002E919D /* SearchView.swift in Sources */,
@@ -347,6 +378,7 @@
 				91C8061229734521002E919D /* SearchBarView.swift in Sources */,
 				9111992A2971E40F00F3C329 /* HostedByArtistsView.swift in Sources */,
 				911199222971DF8400F3C329 /* RecentlyPlayedModel.swift in Sources */,
+				91C8061629736004002E919D /* CategoriesModel.swift in Sources */,
 				9111992D2971EF8900F3C329 /* BlurView.swift in Sources */,
 				91E577F3296F4BC900CB4B2F /* CheckListitemView.swift in Sources */,
 				9111991F2971DF1500F3C329 /* FeaturedStationsModel.swift in Sources */,
