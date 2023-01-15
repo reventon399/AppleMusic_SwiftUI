@@ -337,9 +337,9 @@
 		91E577F7296F513700CB4B2F /* Search */ = {
 			isa = PBXGroup;
 			children = (
-				91B7B4FE2974B86200B51BCA /* UIKit */,
 				91C8060F297343F1002E919D /* SearchView.swift */,
 				91C8061129734521002E919D /* SearchBarView.swift */,
+				91B7B4FE2974B86200B51BCA /* UIKit */,
 				913CAB2629744868007E8CE7 /* SearchResults */,
 				91C8061329734CB4002E919D /* CategoriesView */,
 				91C8061C297367E0002E919D /* DetailCategoriesView */,
