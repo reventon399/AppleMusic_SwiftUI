@@ -20,11 +20,13 @@ struct CategoriesView: View {
             LazyVGrid(columns: columns) {
                 Section {
                     ForEach(categories, id: \.self) { item in
-                        Image(item.image)
-                            .resizable()
-                            .frame(maxWidth: 200, maxHeight: 140)
-                            .scaledToFit()
-                            .cornerRadius(10)
+                        NavigationLink(destination: DetailCategoriesView()) {
+                            Image(item.image)
+                                .resizable()
+                                .frame(maxWidth: 200, maxHeight: 140)
+                                .scaledToFit()
+                                .cornerRadius(10)
+                        }
                     }
                 } header: {
                     Text("Browse Categories")
@@ -32,7 +34,7 @@ struct CategoriesView: View {
                         .fontWeight(.bold)
                         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .leading)
                         .padding(.top, 10)
-                        
+                    
                 }
                 
             }
@@ -40,7 +42,7 @@ struct CategoriesView: View {
         .padding([.leading, .trailing], 12)
     }
 }
-
+                                       
 struct CategoriesView_Previews: PreviewProvider {
     static var previews: some View {
         CategoriesView()

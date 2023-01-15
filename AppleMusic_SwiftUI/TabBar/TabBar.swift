@@ -15,19 +15,19 @@ struct TabBar: View {
                 LibraryView()
                     .tabItem {
                         Image(systemName: "music.note.house.fill")
-                        Text("Медиатека")
+                        Text("Library")
                     }
                 
                 RadioView()
                     .tabItem {
                         Image(systemName: "dot.radiowaves.left.and.right")
-                        Text("Радио")
+                        Text("Radio")
                     }
                 
                 SearchView()
                     .tabItem {
                         Image(systemName: "magnifyingglass")
-                        Text("Поиск")
+                        Text("Search")
                     }
                 
             }
