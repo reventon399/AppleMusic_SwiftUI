@@ -16,7 +16,7 @@ class CategoryHeader: UICollectionReusableView {
     private lazy var headerTitle: UILabel = {
         let header = UILabel()
         header.translatesAutoresizingMaskIntoConstraints = false
-        header.text = Constants.Strings.SectionHeaders.categoryListHeader
+        header.text = "Search by category"
         header.textAlignment = .left
         header.textColor = .black
         header.font = .systemFont(ofSize: 22, weight: .bold)
