@@ -29,7 +29,6 @@ struct HostedByArtistsView: View {
                 Spacer()
             }
             LazyHGrid(rows: rows) {
-                
                 ForEach(modelArray, id:\.self) { item in
                     
                     VStack(alignment: .leading) {
@@ -43,7 +42,7 @@ struct HostedByArtistsView: View {
                             .fontWeight(.semibold)
                             .foregroundColor(Color.white)
                     }
-                }
+                } 
             }
             .frame(height: 200)
             .padding(.horizontal, 16)

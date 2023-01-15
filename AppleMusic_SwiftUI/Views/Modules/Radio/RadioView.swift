@@ -15,7 +15,7 @@ struct RadioView: View {
                 FeaturedStationView()
                 HostedByArtistsView()
                 RecentlyPlayedView()
-                    .navigationBarTitle("Радио")
+                    .navigationBarTitle("Radio")
             }
         }
     }

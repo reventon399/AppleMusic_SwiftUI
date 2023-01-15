@@ -18,12 +18,12 @@ struct LibraryView: View {
                     .navigationBarItems(trailing: Button(action: {
                         editingViewIsHidden.toggle()
                     }, label: {
-                        Text("Править")
+                        Text("Edit")
                             .font(.title3)
 
                             .foregroundColor(.red)
                     }))
-                    .navigationBarTitle("Медиатека")
+                    .navigationBarTitle("Library")
                     
                 
             } else {
@@ -31,11 +31,11 @@ struct LibraryView: View {
                     .navigationBarItems(trailing: Button(action: {
                         editingViewIsHidden.toggle()
                     }, label: {
-                        Text("Готово")
+                        Text("Done")
                             .font(.title3)
                             .foregroundColor(.red)
                     }))
-                    .navigationBarTitle("Медиатека")
+                    .navigationBarTitle("Library")
             }
         }
     }
