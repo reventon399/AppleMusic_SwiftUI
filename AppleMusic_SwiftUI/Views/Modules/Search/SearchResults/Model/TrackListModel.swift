@@ -24,15 +24,15 @@ struct TrackListModel: Hashable, Identifiable {
 
 extension TrackListModel {
     static let allMusic = [
-        TrackListModel(image: "playlist-1", title: "Music For Coding", category: "Favorite Playlist", description: "Apple Music", type: .playlist),
-        TrackListModel(image: "playlist-2", title: "Relaxing Jazz", category: "Favorite Playlist", description: "Apple Music", type: .playlist),
-        TrackListModel(image: "playlist-3", title: "Live", category: "Favorite Playlist", description: "Apple Music", type: .playlist),
-        TrackListModel(image: "playlist-4", title: "Classic Rock", category: "Favorite Playlist", description: "Apple Music", type: .playlist),
-        TrackListModel(image: "track-1", title: "Monkinbird", artist: "Eminem", description: "The Eminem Show", type: .track),
-        TrackListModel(image: "albumLogo", title: "Radioactive", artist: "Imagine Dragons", description: "The Transition of Mali", type: .track),
-        TrackListModel(image: "track-2", title: "I Got Love", artist: "Miyagi & Panda", description: "Russian Hit", type: .track),
-        TrackListModel(image: "track-3", title: "Flo-Rida", artist: "Whistle", description: "Songs Under Cover", type: .track),
-        TrackListModel(image: "track-4", title: "LMFAO", artist: "Party Rock Anthem", description: "Deceptive Bends", type: .track),
-        TrackListModel(image: "track-5", title: "Obsession", artist: "USO", description: "Obsession", type: .track)
+        TrackListModel(image: "", title: "KOMPRESSOR", category: "Favorite Playlist", description: "TVETH 2021", type: .playlist),
+        TrackListModel(image: "", title: "Relaxing Jazz", category: "Favorite Playlist", description: "Apple Music", type: .playlist),
+        TrackListModel(image: "", title: "Live", category: "Favorite Playlist", description: "Apple Music", type: .playlist),
+        TrackListModel(image: "", title: "Classic Rock", category: "Favorite Playlist", description: "Apple Music", type: .playlist),
+        TrackListModel(image: "", title: "Кукла", artist: "LIL KRYSTALL", description: "LIL KRYSTALL Show", type: .track),
+        TrackListModel(image: "", title: "SUPER SONIC", artist: "Tanya Tekis", description: "Trap house", type: .track),
+        TrackListModel(image: "", title: "Hentai", artist: "The Limba, Rakhim", description: "Russian Hit", type: .track),
+        TrackListModel(image: "", title: "NBA", artist: "FRESCO", description: "EQUILIBRIUM", type: .track),
+        TrackListModel(image: "", title: "FASTLANE", artist: "RVETH", description: "BLOODLINES", type: .track),
+        TrackListModel(image: "", title: "PAINKILLER", artist: "JEEBMO, TVETH", description: "Painkiller", type: .track)
     ]
 }
