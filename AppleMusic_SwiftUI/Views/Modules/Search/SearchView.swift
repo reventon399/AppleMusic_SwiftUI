@@ -14,13 +14,12 @@ struct SearchView: View {
     
     var body: some View {
         NavigationView {
-            VStack {
-                
+            VStack {                
                 SearchBarView(searchText: $searchText, isSearchActive: $isSearchingActive)
                 CategoriesView()
             }
             .navigationTitle("Search")
-        }
+        } .accentColor(.red)
     }
 }
 
