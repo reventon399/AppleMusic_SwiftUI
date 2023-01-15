@@ -15,16 +15,16 @@ struct Settings: Hashable, Identifiable {
 
 extension Settings {
     static var settingsItems = [
-        Settings(image: "music.note.list", name: "Плейлисты"),
-        Settings(image: "music.mic", name: "Артисты"),
-        Settings(image: "rectangle.stack", name: "Альбомы"),
-        Settings(image: "music.note", name: "Песни"),
-        Settings(image: "tv", name: "Телешоу и фильмы"),
-        Settings(image: "music.note.tv", name: "Видеоклипы"),
-        Settings(image: "guitars", name: "Жанры"),
-        Settings(image: "person.2.crop.square.stack", name: "Сборники"),
-        Settings(image: "music.quarternote.3", name: "Авторы"),
-        Settings(image: "arrow.down.circle", name: "Загружено"),
+        Settings(image: "music.note.list", name: "Playlists"),
+        Settings(image: "music.mic", name: "Artists"),
+        Settings(image: "rectangle.stack", name: "Albums"),
+        Settings(image: "music.note", name: "Songs"),
+        Settings(image: "tv", name: "TV & Movies"),
+        Settings(image: "music.note.tv", name: "Music Videos"),
+        Settings(image: "guitars", name: "Genres"),
+        Settings(image: "person.2.crop.square.stack", name: "Compilations"),
+        Settings(image: "music.quarternote.3", name: "Composers"),
+        Settings(image: "arrow.down.circle", name: "Downloaded"),
         Settings(image: "music.note.house", name: "Домашняя коллекция")
     ]
 }
