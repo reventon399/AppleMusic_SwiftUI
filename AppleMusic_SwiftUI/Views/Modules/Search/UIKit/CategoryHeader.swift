@@ -8,5 +8,5 @@
 import UIKit
 
 class CategoryHeader: UICollectionReusableView {
-        
+        static var identifier = "CategoryHeader"
 }
