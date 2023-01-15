@@ -11,12 +11,19 @@ struct SearchView: View {
     
     @State private var searchText = ""
     @State private var isSearchingActive = false
+    @State var model = TrackListObservableModel()
     
     var body: some View {
         NavigationView {
             VStack {                
                 SearchBarView(searchText: $searchText, isSearchActive: $isSearchingActive)
-                CategoriesView()
+                if !isSearchingActive {
+                    CategoriesView()
+                        .navigationBarHidden(false)
+                } else {
+                    SearchResultsView(searchText: $searchText, model: model)
+                    .navigationBarHidden(true)
+                }
             }
             .navigationTitle("Search")
         } .accentColor(.red)

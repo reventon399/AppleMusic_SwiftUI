@@ -22,7 +22,7 @@ struct SearchResultsView: View {
         .padding([.leading, .trailing], 12)
         
         if selected == 0 {
-            
+            AppleMusicLibraryView(model: model, searchText: searchText)
         } else {
             MyLibraryView()
         }
