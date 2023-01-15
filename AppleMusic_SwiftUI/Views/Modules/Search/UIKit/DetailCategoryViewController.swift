@@ -6,11 +6,15 @@
 //
 
 import UIKit
+import SwiftUI
 
-class DetailCategoryViewController: UIViewController {
+class DetailCategoryViewController: UIHostingController<DetailCategoriesView> {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    init() {
+        super.init(rootView: DetailCategoriesView())
+    }
 
+    @objc required dynamic init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
 }
