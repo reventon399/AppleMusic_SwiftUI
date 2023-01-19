@@ -8,6 +8,10 @@
 import SwiftUI
 
 struct TabBar: View {
+    
+    @State var expand = false
+    @Namespace var animation
+    
     var body: some View {
         ZStack(alignment: Alignment(horizontal: .center, vertical: .bottom), content: {
             TabView {
@@ -35,7 +39,7 @@ struct TabBar: View {
             BlurView()
                 .frame(height: 80)
                 .offset(y: -48)
-            CurrentTrackView()
+            CurrentTrackView(animation: animation, isExpanded: $expand)
         } )
     }
 }
