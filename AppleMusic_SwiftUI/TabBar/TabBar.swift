@@ -39,7 +39,7 @@ struct TabBar: View {
             BlurView()
                 .frame(height: 80)
                 .offset(y: -48)
-            CurrentTrackView(animation: animation, expand: $expand)
+            CurrentTrackView(animation: animation, isExpanded: $expand)
         } )
     }
 }

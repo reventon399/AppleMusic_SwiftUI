@@ -10,50 +10,53 @@ import SwiftUI
 struct CurrentTrackView: View {
     
     var animation: Namespace.ID
-    @Binding var expand: Bool
-    var height = UIScreen.main.bounds.height / 3
     var safeArea = UIApplication.shared.windows.first?.safeAreaInsets
+    var height = UIScreen.main.bounds.height / 3
+    var totalTime: Double = 1.3 * 60.0
+    
+    @Binding var isExpanded: Bool
     @State var volume: CGFloat = 0
+    @State var currentTime: CGFloat = 0
     
     var body: some View {
         VStack {
             
             Capsule()
                 .fill(Color.gray)
-                .frame(width: expand ? 60 : 0, height: expand ? 4 : 0)
-                .opacity(expand ? 1 : 0)
-                .padding(.top, expand ? safeArea?.top : 0)
-                .padding(.vertical, expand ? 30 : 0)
+                .frame(width: isExpanded ? 60 : 0, height: isExpanded ? 4 : 0)
+                .opacity(isExpanded ? 1 : 0)
+                .padding(.top, isExpanded ? safeArea?.top : 0)
+                .padding(.vertical, isExpanded ? 30 : 0)
             
             HStack(spacing: 15) {
-                if expand { Spacer(minLength: 0)}
+                if isExpanded { Spacer(minLength: 0)}
                 Image("logan")
                     .resizable()
                     .cornerRadius(15)
-                    .frame(width: expand ? height : 55, height: expand ? height : 55)
+                    .frame(width: isExpanded ? height : 55, height: isExpanded ? height : 55)
                     .aspectRatio(contentMode: .fill)
                 
-                if !expand {
+                if !isExpanded {
                     Text("Логан")
                         .font(.title2)
-                        .bold()
+//                        .bold()
                         .matchedGeometryEffect(id: "Label", in: animation)
                 }
                 
                 Spacer()
                 
-                if !expand {
+                if !isExpanded {
                     
                     Button(action: {}, label: {
                         Image(systemName: "play.fill")
                             .font(.title2)
-                            .foregroundColor(.black)
+                            .foregroundColor(.white)
                     })
                     
                     Button(action: {}, label: {
                         Image(systemName: "forward.fill")
                             .font(.title2)
-                            .foregroundColor(.black)
+                            .foregroundColor(.white)
                     })
                 }
                 
@@ -61,11 +64,8 @@ struct CurrentTrackView: View {
             .padding(.horizontal)
             
             VStack(spacing: 15) {
-                
-//                Spacer(minLength: 20)
-                
                 HStack {
-                    if expand {
+                    if isExpanded {
                         VStack(alignment: .leading, spacing: 5) {
                             Text("Логан")
                                 .font(.title2)
@@ -76,42 +76,50 @@ struct CurrentTrackView: View {
                                 .font(.title2)
                                 .foregroundColor(.gray)
                                 .fontWeight(.medium)
-                                
+                            
                         }
                     }
                     
                     Spacer(minLength: 0)
                     
                     Button(action: {}) {
-                        Image(systemName: "ellipsis.circle")
+                        Image(systemName: "ellipsis")
                             .font(.title2)
-                            .foregroundColor(.primary)
+                            .foregroundColor(.black)
+                            .opacity(0.8)
+                            .frame(width: 30, height: 30, alignment: .center)
+                            .background(
+                                Color.gray
+                                    .cornerRadius(20)
+                            )
                     }
                 }
                 .padding()
                 .padding(.top, 20)
                 
-                //line
+                Slider(value: $currentTime, in: 0...totalTime)
+                    .accentColor(.white).opacity(0.8)
+                    .frame(maxWidth: UIScreen.main.bounds.size.width / 1.1)
+                    .frame(height: 5)
+                    .padding([.leading, .trailing], 10)
+                    .padding(.top, 10)
+                    .padding(.bottom, 5)
                 
                 HStack {
-                    Capsule()
-                        .fill(
-                            LinearGradient(gradient: .init(colors: [Color.white.opacity(0.7), Color.white.opacity(0.1)]), startPoint: .leading, endPoint: .trailing)
-                        )
-                        .frame(height: 4)
-                    Text("LIVE")
-                        .fontWeight(.bold)
-                        .foregroundColor(.primary)
+                    Text("\(timeString(time:currentTime))")
                     
-                    Capsule()
-                        .fill(
-                            LinearGradient(gradient: .init(colors: [Color.white.opacity(0.1), Color.white.opacity(0.7)]), startPoint: .leading, endPoint: .trailing)
-                        )
-                        .frame(height: 4)
+                    Spacer()
+                    
+                    Text("-\(timeString(time: totalTime - currentTime))")
                 }
-                .padding()
+                .foregroundColor(Color.gray).opacity(0.8)
+                .frame(
+                    maxWidth: (UIScreen.main.bounds.size.width / 1.1),
+                    maxHeight: 3,
+                    alignment: .leading
+                )
+                .padding(.bottom, 20)
                 
-                // Next Stop/Play Prefiously Buttons
                 HStack(alignment: .center, spacing: 50) {
                     Button(action: {}) {
                         Image(systemName: "backward.fill")
@@ -142,9 +150,9 @@ struct CurrentTrackView: View {
                 }
                 .padding()
                 
-                HStack(spacing: 22) {
+                HStack(alignment: .center,spacing: 70) {
                     Button(action: {}) {
-                        Image(systemName: "arrow.up.message")
+                        Image(systemName: "quote.bubble")
                             .font(.title2)
                             .foregroundColor(.white)
                     }
@@ -162,26 +170,30 @@ struct CurrentTrackView: View {
                     }
                 }
                 .padding(.bottom, safeArea?.bottom == 0 ? 15 : safeArea?.bottom)
+                Spacer()
             }
-            // stretch effect
-            .frame(width: expand ? nil : 0, height: expand ? nil : 0)
-            .opacity(expand ? 1 : 0)
+            .frame(width: isExpanded ? nil : 0, height: isExpanded ? nil : 0)
+            .opacity(isExpanded ? 1 : 0)
         }
-            .frame(maxHeight: expand ? .infinity : 80)
-            .background(
-                VStack(spacing: 0) {
-                    BlurView()
-                    Divider()
-                }
-                    .onTapGesture {
-                        withAnimation(.spring()) {
-                            expand.toggle()
-                        }
+        .frame(maxHeight: isExpanded ? .infinity : 80)
+        .background(
+            VStack(spacing: 0) {
+                BlurView()
+                Divider()
+            }
+                .onTapGesture {
+                    withAnimation(.spring()) {
+                        isExpanded.toggle()
                     }
-            )
-            .ignoresSafeArea()
-            .offset(y: expand ? 0 : -48)
+                }
+        )
+        .ignoresSafeArea()
+        .offset(y: isExpanded ? 0 : -48)
     }
 }
 
-
+private func timeString(time: Double) -> String {
+    let minute = Int(time) / 60 % 60
+    let second = Int(time) % 60
+    return String(format: "%02i:%02i", minute, second)
+}
